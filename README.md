@@ -31,7 +31,7 @@ You can install `stormpath-mailchimp` through [npm][] by
 running:
 
 ```console
-$ npm install -g stormpath-mailchimp
+$ npm install -g --save-dev https://github.com/BeardandFedora/stormpath-mailchimp/archive/0.1.1.tar.gz
 ```
 
 **NOTE**: Depending on how you have `npm` installed, you might need to run the
