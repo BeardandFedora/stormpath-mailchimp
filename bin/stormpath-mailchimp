@@ -56,10 +56,18 @@ function merge(directory, list, callback) {
           email: account.email
         },
         merge_vars: {
+          STATUS: account.status,
           FNAME: account.givenName,
-          LNAME: account.surname
+          LNAME: account.surname,
+		  FULLNAME: account.fullName,
+          USERNAME: account.username,
+          USERID: account.id,
+          USERDIR: account.directory,
+		  CREATEDAT: account.createdAt
         },
-        update_existing: true
+        update_existing: true,
+		double_optin: false,
+		send_welcome: false
       }, function(err, resp) {
         if (err) {
           console.log(err);
